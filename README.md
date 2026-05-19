@@ -1,6 +1,5 @@
-# Cybersecurity Lab
-Kali Linux VM setup, Android debugging, firmware analysis and root study
 # Cybersecurity Lab - Kali Linux
+Kali Linux VM setup, Android debugging, firmware analysis and root study
 
 ## Overview
 This repository documents my personal cybersecurity lab setup using Kali Linux in a virtual environment.
