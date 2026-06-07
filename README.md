@@ -1,24 +1,30 @@
-# Cybersecurity Lab
+# Cybersecurity Hacking Lab
 
-Repository personale per studiare e documentare cybersecurity, Android security, mobile pentesting, Kali Linux, networking, web security e reverse engineering.
+Knowledge base personale per studiare cybersecurity, ethical hacking, Android security, mobile pentesting, Kali Linux, networking, web security, reverse engineering e reporting professionale.
 
-> Tutto il materiale è pensato per studio, laboratorio personale e ambienti autorizzati.
+> Uso previsto: studio, laboratorio personale, CTF, macchine virtuali, emulatori e ambienti autorizzati. Non usare queste note su sistemi, account, reti o dispositivi senza permesso.
 
-## Come usare questo repository
+## Obiettivo del repository
 
-- `docs/` contiene la teoria spiegata in modo ordinato.
-- `cheatsheets/` contiene comandi rapidi da ripassare.
-- `labs/` contiene esercizi pratici e procedure passo-passo.
-- `roadmap/` contiene cosa ho già studiato, cosa sto studiando e cosa studierò.
-- `templates/` contiene modelli per scrivere nuovi appunti e nuovi laboratori.
+Questo repository serve a costruire un percorso ordinato da principiante a junior ethical hacker, con:
+
+- teoria spiegata semplice,
+- cheatsheet di comandi,
+- laboratori pratici autorizzati,
+- checklist operative,
+- template per report,
+- roadmap di studio,
+- appunti utili per portfolio GitHub.
 
 ## Struttura
 
 ```text
-cybersecurity-lab/
+cybersecurity-hacking-lab/
 ├── README.md
+├── ETHICS.md
 ├── docs/
 │   ├── adb-comandi.md
+│   ├── ethical-hacking/
 │   ├── android/
 │   ├── kali/
 │   ├── mobile-security/
@@ -26,122 +32,162 @@ cybersecurity-lab/
 │   ├── reverse-engineering/
 │   └── web-security/
 ├── cheatsheets/
-│   └── android-adb.md
+│   ├── android-adb.md
+│   └── linux-essentials.md
+├── checklists/
+│   ├── lab-safety-checklist.md
+│   └── junior-ethical-hacker-checklist.md
 ├── labs/
 │   └── android/
 │       └── adb-first-lab.md
 ├── roadmap/
 │   ├── completed.md
 │   ├── studying.md
-│   └── future.md
+│   ├── future.md
+│   └── ethical-hacker-path.md
 └── templates/
     ├── lab-template.md
-    └── notes-template.md
+    ├── notes-template.md
+    └── report-template.md
 ```
 
-## Indice principale
+## Etica e regole
 
-### Android Security
+Prima di studiare o testare qualsiasi cosa leggere:
+
+- [Codice etico del laboratorio](ETHICS.md)
+- [Checklist sicurezza laboratorio](checklists/lab-safety-checklist.md)
+
+Regola principale: testare solo ciò che è mio o ciò per cui ho autorizzazione esplicita.
+
+## Percorso Ethical Hacker
+
+- [Indice Ethical Hacking](docs/ethical-hacking/README.md)
+- [Fasi di un test etico](docs/ethical-hacking/phases.md)
+- [Percorso completo Ethical Hacker](roadmap/ethical-hacker-path.md)
+- [Checklist Junior Ethical Hacker](checklists/junior-ethical-hacker-checklist.md)
+
+## Android Security
 
 - [ADB — guida completa](docs/adb-comandi.md)
 - [Indice Android Security](docs/android/README.md)
+- [Android Manifest](docs/android/android-manifest.md)
 - [Cheatsheet ADB](cheatsheets/android-adb.md)
 - [Primo laboratorio ADB](labs/android/adb-first-lab.md)
 
-### Mobile Application Security
+Argomenti da continuare:
+
+- Activity
+- Service
+- Broadcast Receiver
+- Content Provider
+- Intent
+- Deep Link
+- Logcat avanzato
+- Permessi Android
+
+## Mobile Application Security
 
 - [Indice Mobile Security](docs/mobile-security/README.md)
+- [Analisi statica Mobile](docs/mobile-security/static-analysis.md)
 
-Argomenti da sviluppare:
+Argomenti da continuare:
 
-- OWASP Mobile Top 10
-- OWASP MASVS
-- OWASP MASTG
 - MobSF
 - JADX
 - APKTool
 - Frida
 - Objection
 - Burp Suite
-- Analisi statica APK
-- Analisi dinamica APK
+- OWASP MASVS
+- OWASP MASTG
+- Analisi dinamica
+- WebView security
+- Secure storage
 
-### Kali Linux
+## Kali Linux
 
 - [Indice Kali Linux](docs/kali/README.md)
+- [Cheatsheet Linux Essentials](cheatsheets/linux-essentials.md)
 
-Argomenti da sviluppare:
+Argomenti da continuare:
 
-- terminale Linux
-- permessi
-- file system
-- networking base
-- tool fondamentali
+- Bash
+- permessi Linux
+- processi
+- servizi
+- SSH
+- cron
+- gestione pacchetti
 
-### Networking
+## Networking
 
 - [Indice Networking](docs/networking/README.md)
+- [TCP/IP basi](docs/networking/tcp-ip-basics.md)
 
-Argomenti da sviluppare:
+Argomenti da continuare:
 
-- TCP/IP
 - DNS
 - DHCP
+- TCP e UDP
 - porte
 - NAT
 - routing
 - Wireshark
-- nmap
+- nmap in laboratorio autorizzato
 
-### Web Security
+## Web Security
 
 - [Indice Web Security](docs/web-security/README.md)
+- [HTTP e HTTPS basi](docs/web-security/http-basics.md)
 
-Argomenti da sviluppare:
+Argomenti da continuare:
 
-- HTTP/HTTPS
-- cookie e sessioni
+- cookie
+- sessioni
 - autenticazione
 - autorizzazione
 - OWASP Top 10
 - API security
+- JWT
 
-### Reverse Engineering
+## Reverse Engineering
 
 - [Indice Reverse Engineering](docs/reverse-engineering/README.md)
 
-Argomenti da sviluppare:
+Argomenti da continuare:
 
-- APKTool
+- struttura APK
 - JADX
-- AndroidManifest.xml
-- codice decompilato
-- risorse APK
+- APKTool
+- Smali base
 - ricerca segreti hardcoded
+- Ghidra base
 
 ## Roadmap
 
 - [Argomenti completati](roadmap/completed.md)
 - [Argomenti in studio](roadmap/studying.md)
 - [Argomenti futuri](roadmap/future.md)
+- [Percorso Ethical Hacker](roadmap/ethical-hacker-path.md)
+
+## Template
+
+- [Template appunti](templates/notes-template.md)
+- [Template laboratorio](templates/lab-template.md)
+- [Template report sicurezza](templates/report-template.md)
 
 ## Metodo di studio
 
-Per ogni nuovo argomento devo creare:
+Per ogni nuovo argomento:
 
-1. una pagina teorica in `docs/`,
-2. una cheatsheet in `cheatsheets/`, se ci sono comandi da ricordare,
-3. un laboratorio in `labs/`, se è un argomento pratico,
-4. un aggiornamento della roadmap.
-
-## Regole del laboratorio
-
-1. Usare solo dispositivi, app, macchine virtuali e reti autorizzate.
-2. Non testare mai sistemi di altre persone senza permesso.
-3. Salvare comandi, output, errori e soluzioni.
-4. Scrivere appunti chiari, così posso ripassarli prima di un esame o di un laboratorio.
-5. Aggiornare il repository ogni volta che imparo qualcosa di nuovo.
+1. Creo una guida teorica in `docs/`.
+2. Creo una cheatsheet se ci sono comandi.
+3. Creo un laboratorio se l'argomento è pratico.
+4. Aggiorno la roadmap.
+5. Aggiungo eventuali errori incontrati e soluzioni.
+6. Se trovo un problema di sicurezza in laboratorio, lo documento con il template report.
 
 ## Stato attuale
 
-Repository riorganizzato come knowledge base personale. La base Android/ADB è già presente; le altre sezioni sono pronte per essere riempite con appunti, laboratori e cheatsheet.
+Repository trasformato in una base di studio e portfolio per ethical hacking. La parte Android/ADB è già avviata; sono state aggiunte etica, checklist, reporting, networking, HTTP, Android Manifest e analisi statica mobile.
